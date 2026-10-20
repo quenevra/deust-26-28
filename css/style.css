@@ -1,0 +1,73 @@
+footer {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 5px solid navy;
+}
+header h1 {
+     background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-top: 5px solid navy;
+}
+nav ul li {
+    background-color: lightblue;
+    padding: 15px;
+     border: 2px solid navy;
+    border-radius: 8px;
+    display: inline-block;
+    position: relative;
+    left: 32%;
+
+}
+.contact{
+    background-color: lightblue;
+    padding: 15px;
+    margin-top: 20px;
+    border: 3px solid navy;
+    border-radius: 15px;
+    text-align: center;
+}
+#a-propos{
+text-align: center;
+}
+#Competences{
+    text-align: center;
+    font-size: 2rem;
+}
+#Centres{
+    text-align: center;
+    font-size: 2rem;
+}
+#Langues{
+    text-align: center;
+    font-size: 2rem;
+}
+#Formations{
+    text-align: center;
+    font-size: 2rem;
+}
+#Experiences{
+    text-align: center;
+    font-size: 2rem;
+}
+#cv{
+    text-align: center;
+    font-size: 2rem;
+}
+#projets{
+    text-align: center;
+    font-size: 2rem;
+}
+#bienvenue{
+    text-align: center;
+    font-size: 2rem;
+}
+#parcours{
+     text-align: center;
+    font-size: 2rem;
+}
