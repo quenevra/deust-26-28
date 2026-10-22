@@ -1,73 +1,113 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
 footer {
-    background-color: steelblue;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    border-top: 5px solid navy;
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: var(--primary-spacing);
+  margin-top: auto;
+  border-top: 3px solid navy;
+  width: 100%;
 }
 header h1 {
-     background-color: steelblue;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-    border-top: 5px solid navy;
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: var(--primary-spacing);
+  margin-top: 20px;
+  border-top: 5px solid navy;
 }
-nav ul li {
-    background-color: lightblue;
-    padding: 15px;
-     border: 2px solid navy;
-    border-radius: 8px;
-    display: inline-block;
-    position: relative;
-    left: 32%;
-
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 20px;
 }
-.contact{
-    background-color: lightblue;
-    padding: 15px;
-    margin-top: 20px;
-    border: 3px solid navy;
-    border-radius: 15px;
-    text-align: center;
+nav li {
+  display: inline-block;
 }
-#a-propos{
-text-align: center;
+nav a.btn {
+  display: inline-block;
+  background-color: steelblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
 }
-#Competences{
-    text-align: center;
-    font-size: 2rem;
+nav a.btn:hover {
+  background-color: crimson;
 }
-#Centres{
-    text-align: center;
-    font-size: 2rem;
+#a-propos {
+  text-align: center;
 }
-#Langues{
-    text-align: center;
-    font-size: 2rem;
+#Competences {
+  text-align: center;
+  font-size: 2rem;
 }
-#Formations{
-    text-align: center;
-    font-size: 2rem;
+#Centres {
+  text-align: center;
+  font-size: 2rem;
 }
-#Experiences{
-    text-align: center;
-    font-size: 2rem;
+#Langues {
+  text-align: center;
+  font-size: 2rem;
 }
-#cv{
-    text-align: center;
-    font-size: 2rem;
+#Formations {
+  text-align: center;
+  font-size: 2rem;
 }
-#projets{
-    text-align: center;
-    font-size: 2rem;
+#Experiences {
+  text-align: center;
+  font-size: 2rem;
 }
-#bienvenue{
-    text-align: center;
-    font-size: 2rem;
+#cv {
+  text-align: center;
+  font-size: 2rem;
 }
-#parcours{
-     text-align: center;
-    font-size: 2rem;
+#projets {
+  text-align: center;
+  font-size: 2rem;
+}
+#bienvenue {
+  text-align: center;
+  font-size: 2rem;
+}
+#parcours {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact {
+  width: 250px;
+  padding: 20px;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  background-color: aliceblue;
+  position: absolute;
+  right: 20px;
+  top: 150px;
+}
+.contact h2 {
+  text-align: center;
+  margin-top: 0;
+}
+contact ul {
+  list-style: none;
+  padding: 0;
+}
+.contact li {
+  margin: 10px 0;
 }
