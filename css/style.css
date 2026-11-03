@@ -1,44 +1,98 @@
-html,
-body {
-  margin: 0;
-  min-height: 100%;
+:root {
+  --primary: lightgray;
+  --secondary: navy;
+  --background-color: aliceblue;
+  --accent: crimson;
+  --text: #222;
+  --white: #fff;
+  --title-color: white;
+  --header-color: black;
+  --primary-spacing: 15px;
+  --margin-top: 20px;
+  --spacing: clamp(0.75rem, 2vw, 2rem);
+  --radius: 10px;
+  --title-size: clamp(1.5rem, 3vw, 2.5rem);
+  --text-size: clamp(0.9rem, 1.2vw, 1.1rem);
+  --section-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
 }
 body {
+  margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-size: var(--text-size);
+  color: var(--text);
 }
-main {
-  flex: 1;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
+header,
 footer {
-  background-color: steelblue;
-  color: white;
-  text-align: center;
-  padding: var(--primary-spacing);
-  margin-top: auto;
-  border-top: 3px solid navy;
   width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  text-align: center;
+}
+header {
+  border-top: 5px solid var(--secondary);
 }
 header h1 {
   background-color: steelblue;
   color: white;
   text-align: center;
   padding: var(--primary-spacing);
+  font-size: var(--title-size);
+  margin: 0;
   margin-top: 20px;
   border-top: 5px solid navy;
 }
+main {
+  flex: 1;
+  width: min(100% - 2rem, 1200px);
+  margin-inline: auto;
+  padding-block: var(--spacing);
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 300px);
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: start;
+}
 nav ul {
-  list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: clamp(0.5rem, 2vw, 1.2rem);
+  list-style: none;
   padding: 0;
-  margin: 20px;
+  margin: 1rem 0;
 }
 nav li {
   display: inline-block;
+}
+nav a {
+  display: inline-block;
+  padding: 0.7rem 1.2rem;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: var(--radius);
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3 ease;
+}
+nav a:hover {
+  background-color: var(--accent);
+  transform: translateY(-2px);
 }
 nav a.btn {
   display: inline-block;
@@ -51,50 +105,20 @@ nav a.btn {
 nav a.btn:hover {
   background-color: crimson;
 }
-#a-propos {
-  text-align: center;
+section {
+  margin-block: clamp(2rem, 5vw, 4rem);
 }
-#Competences {
+section h2 {
+  font-size: var(--section-size);
   text-align: center;
-  font-size: 2rem;
-}
-#Centres {
-  text-align: center;
-  font-size: 2rem;
-}
-#Langues {
-  text-align: center;
-  font-size: 2rem;
-}
-#Formations {
-  text-align: center;
-  font-size: 2rem;
-}
-#Experiences {
-  text-align: center;
-  font-size: 2rem;
-}
-#cv {
-  text-align: center;
-  font-size: 2rem;
-}
-#projets {
-  text-align: center;
-  font-size: 2rem;
-}
-#bienvenue {
-  text-align: center;
-  font-size: 2rem;
-}
-#parcours {
-  text-align: center;
-  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 .contact {
-  width: 250px;
-  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  padding: var(--spacing);
   border: 2px solid lightgray;
-  border-radius: 10px;
+  border-radius: var(--radius);
   background-color: aliceblue;
   position: absolute;
   right: 20px;
@@ -104,10 +128,60 @@ nav a.btn:hover {
   text-align: center;
   margin-top: 0;
 }
-contact ul {
+.contact ul {
   list-style: none;
   padding: 0;
 }
 .contact li {
-  margin: 10px 0;
+  margin-block: 0.7rem;
+}
+.cadre {
+  border: 1px solid black;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+}
+.cadre img {
+  width: 100%;
+}
+footer {
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  padding: var(--primary-spacing);
+  width: 100%;
+  margin-top: auto;
+  border-top: 3px solid var(--secondary);
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .contact {
+    max-width: 100%;
+  }
+  nav ul {
+    gap: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header,
+  footer {
+    padding: 1rem;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  nav a {
+    display: block;
+    text-align: center;
+  }
+  section {
+    margin-block: 1.5rem;
+  }
+  main {
+    width: min(100% - 1.5rem, 1200px);
+  }
 }
