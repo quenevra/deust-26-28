@@ -1,36 +1,386 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projets</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Découvrez mes projets et réalisations dans le domaine du numérique.">
+
+    <title>Mes projets | Portfolio 2026</title>
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projets.css">
+
+</head>
+
+<body class="page-projets">
     <header>
-      <h1>Portfolio</h1>
-      <div class="conteneur">
-        <nav>
-          <ul>
-            <li><a href="index.html" class="btn">Accueil</a></li>
-            <li><a href="Projets.html" class="btn">Projets</a></li>
-            <li><a href="cv.html" class="btn">CV</a></li>
-            <li><a href="contact.html" class="btn">Contact</a></li>
-            <li><a href="à propos.html" class="btn">À propos</a></li>
-          </ul>
-        </nav>
-      </div>
+
+        <div class="conteneur">
+
+            <h1 class="logo">
+                PORTFOLIO <span>· 2026</span>
+            </h1>
+
+            <nav aria-label="Navigation principale">
+
+                <ul>
+                    <li><a href="index.html" class="btn">Accueil</a></li>
+                    <li><a href="Projets.html" class="btn" aria-current="page">Projets</a></li>
+                    <li><a href="cv.html" class="btn">CV</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                    <li><a href="apropos.html" class="btn">À propos</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
     </header>
-    <section id="projets">
-      <h2>Projets</h2>
-    </section>
-    <p>Voici mes projets en cours de réalisation</p>
-    <figure>
-      <img src="projet1.jpg" />
+    <main>
+        <section class="banniere-projets">
+
+            <h2>Mes projets</h2>
+
+            <p>
+                Bienvenue dans mon espace projets.
+
+                Vous trouverez ici les différentes réalisations
+                effectuées dans le cadre de ma formation
+                en DEUST Webmaster et Métiers de l'Internet.
+            </p>
+
+        </section>
+        <section class="section-projets">
+
+            <h2>Mes réalisations</h2>
+
+            <p class="introduction-projets">
+                Cliquez sur les images pour les découvrir en grand format.
+            </p>
+
+            <div class="grille-projets">
+                <article class="carte-projet">
+
+                    <a href="#image1" class="lien-projet">
+
+                        <figure class="image-projet">
+
+                            <img
+                                src="images/projet1.jpg"
+                                alt="Première face de mon flyer commercial"
+                            >
+
+                        </figure>
+
+                        <div class="contenu-projet">
+
+                            <h3>Projet 1 - Flyer commercial</h3>
+
+                            <p>
+                                Réalisation d'un flyer commercial.
+                                Ce travail a été réalisé dans le cadre
+                                du module consacré à l'utilisation
+                                du logiciel InDesign.
+                            </p>
+
+                            <span class="statut-projet statut-termine">
+                                Terminé
+                            </span>
+
+                            <span class="appel-projet">
+                                Agrandir l'image →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+                <div id="image1" class="image-agrandie">
+
+                    <a href="#" class="fermer-image" aria-label="Fermer l'image">
+                        ×
+                    </a>
+
+                    <img
+                        src="images/projet1.jpg"
+                        alt="Flyer commercial en grand format"
+                    >
+
+                </div>
+                <article class="carte-projet">
+
+                    <a href="#image2" class="lien-projet">
+
+                        <figure class="image-projet">
+
+                            <img
+                                src="images/projet2.jpg"
+                                alt="Deuxième face de mon flyer commercial"
+                            >
+
+                        </figure>
+
+                        <div class="contenu-projet">
+
+                            <h3>Projet 2 - Flyer commercial</h3>
+
+                            <p>
+                                Présentation de l'autre face du flyer
+                                commercial, réalisée dans le cadre
+                                du module consacré à InDesign.
+                            </p>
+
+                            <span class="statut-projet statut-termine">
+                                Terminé
+                            </span>
+
+                            <span class="appel-projet">
+                                Agrandir l'image →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+                <div id="image2" class="image-agrandie">
+
+                    <a href="#" class="fermer-image" aria-label="Fermer l'image">
+                        ×
+                    </a>
+
+                    <img
+                        src="images/projet2.jpg"
+                        alt="Deuxième face du flyer commercial en grand format"
+                    >
+
+                </div>
+                <article class="carte-projet">
+
+                    <a href="#image3" class="lien-projet">
+
+                        <figure class="image-projet">
+
+                            <img
+                                src="images/projet3.png"
+                                alt="Logo d'une association fictive"
+                            >
+
+                        </figure>
+
+                        <div class="contenu-projet">
+
+                            <h3>Projet 3 - Création de logo</h3>
+
+                            <p>
+                                Réalisation d'un logo pour une association
+                                fictive dans le cadre du module
+                                Communication Numérique.
+                            </p>
+
+                            <span class="statut-projet statut-termine">
+                                Terminé
+                            </span>
+
+                            <span class="appel-projet">
+                                Agrandir l'image →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+                <div id="image3" class="image-agrandie">
+
+                    <a href="#" class="fermer-image" aria-label="Fermer l'image">
+                        ×
+                    </a>
+
+                    <img
+                        src="images/projet3.png"
+                        alt="Logo de l'association en grand format"
+                    >
+
+                </div>
+                <article class="carte-projet">
+
+                    <a href="#image4" class="lien-projet">
+
+                        <figure class="image-projet">
+
+                            <img
+                                src="images/projet4.jpg"
+                                alt="Projet graphique autour de South Park"
+                            >
+
+                        </figure>
+
+                        <div class="contenu-projet">
+
+                            <h3>Projet 4 - South Park</h3>
+
+                            <p>
+                                Réalisation d'un projet graphique
+                                autour de la série South Park
+                                avec le logiciel Illustrator,
+                                dans le cadre du module dédié.
+                            </p>
+
+                            <span class="statut-projet statut-termine">
+                                Terminé
+                            </span>
+
+                            <span class="appel-projet">
+                                Agrandir l'image →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+                <div id="image4" class="image-agrandie">
+
+                    <a href="#" class="fermer-image" aria-label="Fermer l'image">
+                        ×
+                    </a>
+
+                    <img
+                        src="images/projet4.jpg"
+                        alt="Projet South Park en grand format"
+                    >
+
+                </div>
+                <article class="carte-projet">
+
+                    <a href="#image5" class="lien-projet">
+
+                        <figure class="image-projet">
+
+                            <img
+                                src="images/projet5.png"
+                                alt="Projet de game design autour de Mario"
+                            >
+
+                        </figure>
+
+                        <div class="contenu-projet">
+
+                            <h3>Projet 5 - Game Design Mario</h3>
+
+                            <p>
+                                Réalisation d'un projet autour du
+                                game design de la série de jeux vidéo
+                                Mario, avec le logiciel Illustrator.
+                                Ce projet est actuellement en cours.
+                            </p>
+
+                            <span class="statut-projet statut-en-cours">
+                                En cours
+                            </span>
+
+                            <span class="appel-projet">
+                                Agrandir l'image →
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                </article>
+                <div id="image5" class="image-agrandie">
+
+                    <a href="#" class="fermer-image" aria-label="Fermer l'image">
+                        ×
+                    </a>
+
+                    <img
+                        src="images/projet5.png"
+                        alt="Projet Mario en grand format"
+                    >
+
+                </div>
+                <article class="carte-projet">
+                    <div class="apercu-pdf">
+
+    <figure class="image-projet">
+        <img
+            src="images/projet3.png"
+            alt="Illustration du projet 6"
+        >
     </figure>
 
+</div>
+    <div class="contenu-projet">
+
+        <h3>Projet 6 - Portfolio</h3>
+
+        <p>
+            Réalisation d'un portfolio autour de la conception
+            d'un logo pour une association fictive.
+            Ce travail a été réalisé dans le cadre du module
+            Communication Numérique.
+        </p>
+
+        <span class="statut-projet statut-termine">
+            Terminé
+        </span>
+        <div class="actions-projet">
+
+            <a
+                href="documents/projet6.pdf"
+                class="bouton-projet"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Consulter le PDF
+            </a>
+
+            <a
+                href="documents/projet6.pdf"
+                class="bouton-projet bouton-telechargement"
+                download="Projet6.pdf"
+            >
+                Télécharger le PDF
+            </a>
+
+        </div>
+
+    </div>
+
+</article>
+</div>
+        </section>
+        <section class="informations-projets">
+
+            <h2>Une aventure qui continue</h2>
+
+            <p>
+               Ce portfolio évoluera au fil de ma formation,
+                de mes apprentissages et de mes expériences.
+            </p>
+
+        </section>
+
+    </main>
     <footer>
-      <p>&copy; 2026 - Cours HTML</p>
+
+        <div class="conteneur">
+
+            <p>
+                &copy; 2026 - Portfolio personnel
+            </p>
+
+        </div>
+
     </footer>
-  </body>
+
+</body>
+
 </html>

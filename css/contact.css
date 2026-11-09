@@ -1,0 +1,279 @@
+.page-contact {
+    background-color: var(--background-color, aliceblue);
+}
+
+.page-contact main {
+    width: min(100% - 2rem, 1100px);
+    margin-inline: auto;
+}
+.banniere-contact {
+    margin-top: 2rem;
+    padding: clamp(2rem, 5vw, 4rem) 1.5rem;
+
+    background: linear-gradient(
+        135deg,
+        var(--secondary, navy),
+        steelblue
+    );
+
+    color: white;
+    text-align: center;
+
+    border-radius: var(--radius, 10px);
+}
+
+.banniere-contact h2 {
+    color: white;
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-top: 0;
+}
+
+.banniere-contact p {
+    max-width: 700px;
+    margin-inline: auto;
+    line-height: 1.7;
+}
+.grille-contact {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+
+    margin-block: 3rem;
+}
+
+.carte-contact {
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: var(--radius, 10px);
+    border-top: 4px solid steelblue;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.carte-contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.13);
+}
+
+.icone-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 1rem;
+
+    background-color: aliceblue;
+    color: navy;
+
+    border-radius: 50%;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.carte-contact h3 {
+    color: navy;
+    margin-bottom: 0.8rem;
+}
+
+.carte-contact p {
+    overflow-wrap: anywhere;
+    line-height: 1.6;
+}
+.contact-link {
+    display: inline-block;
+
+    color: navy;
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: crimson;
+    text-decoration: underline;
+}
+
+.contact-link:focus-visible {
+    outline: 3px solid crimson;
+    outline-offset: 4px;
+}
+.bouton-contact {
+    display: inline-block;
+
+    margin-top: 1rem;
+    padding: 0.8rem 1.4rem;
+
+    background-color: navy;
+    color: white;
+
+    border-radius: var(--radius, 10px);
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.bouton-contact:hover {
+    background-color: crimson;
+    transform: translateY(-3px);
+}
+
+.bouton-contact:focus-visible {
+    outline: 3px solid crimson;
+    outline-offset: 4px;
+}
+.section-formulaire {
+    margin-block: 4rem;
+}
+
+.section-formulaire h2 {
+    color: navy;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulaire-contact {
+    max-width: 700px;
+    margin-inline: auto;
+
+    padding: 2rem;
+
+    background-color: white;
+
+    border-radius: var(--radius, 10px);
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.champ-formulaire {
+    margin-bottom: 1.5rem;
+}
+
+.champ-formulaire label {
+    display: block;
+
+    margin-bottom: 0.5rem;
+
+    color: navy;
+    font-weight: bold;
+}
+
+.champ-formulaire input,
+.champ-formulaire textarea {
+    display: block;
+
+    width: 100%;
+
+    padding: 0.9rem;
+
+    border: 1px solid lightgray;
+    border-radius: 6px;
+
+    background-color: #fafafa;
+
+    color: #222;
+    font: inherit;
+}
+
+.champ-formulaire textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.champ-formulaire input:focus,
+.champ-formulaire textarea:focus {
+    outline: 2px solid steelblue;
+    border-color: navy;
+    background-color: white;
+}
+
+.bouton-envoi {
+    display: inline-block;
+
+    padding: 0.9rem 1.5rem;
+
+    border: none;
+    border-radius: var(--radius, 10px);
+
+    background-color: navy;
+    color: white;
+
+    font: inherit;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.bouton-envoi:hover {
+    background-color: crimson;
+}
+.info-contact {
+    margin-block: 3rem;
+    padding: 1.5rem;
+
+    background-color: #e0eaf3;
+
+    border-left: 5px solid steelblue;
+    border-radius: var(--radius, 10px);
+
+    text-align: center;
+}
+
+.info-contact p {
+    margin: 0;
+    line-height: 1.7;
+}
+@media screen and (max-width: 768px) {
+
+    .grille-contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+@media screen and (max-width: 480px) {
+
+    .banniere-contact {
+        padding: 2rem 1rem;
+    }
+
+    .carte-contact {
+        padding: 1.5rem;
+    }
+
+    .formulaire-contact {
+        padding: 1.2rem;
+    }
+
+    .bouton-contact,
+    .bouton-envoi {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

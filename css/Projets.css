@@ -1,0 +1,362 @@
+.page-projets {
+    background-color: var(--background-color);
+}
+
+.page-projets main {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+}
+.banniere-projets {
+    padding: clamp(2rem, 6vw, 5rem) 1.5rem;
+    margin-top: 2rem;
+
+    background: linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--primary)
+    );
+
+    color: var(--white);
+    text-align: center;
+
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.banniere-projets h2 {
+    color: var(--white);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 1rem;
+}
+.banniere-projets p {
+    max-width: 750px;
+    margin-inline: auto;
+    color: var(--white);
+    line-height: 1.8;
+}
+.section-projets {
+    margin-block: 4rem;
+}
+
+.section-projets > h2 {
+    text-align: center;
+    color: var(--secondary);
+    font-size: var(--section-size);
+    margin-bottom: 1rem;
+}
+
+.introduction-projets {
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+.carte-projet {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-color: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.carte-projet:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+.lien-projet {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    color: inherit;
+    text-decoration: none;
+    cursor: zoom-in;
+}
+
+.lien-projet:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -4px;
+}
+.image-projet {
+    width: 100%;
+    height: 210px;
+    margin: 0;
+    overflow: hidden;
+    background-color: #e0eaf3;
+}
+
+.image-projet img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: transform var(--transition);
+}
+
+.carte-projet:hover .image-projet img {
+    transform: scale(1.05);
+}
+.contenu-projet {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem;
+}
+
+.contenu-projet h3 {
+    color: var(--secondary);
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.contenu-projet p {
+    margin: 0 0 1.5rem;
+    line-height: 1.7;
+}
+.statut-projet {
+    display: inline-block;
+    width: fit-content;
+
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--radius-small);
+
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.statut-en-cours {
+    background-color: #fff0d6;
+    color: #805000;
+}
+
+.statut-termine {
+    background-color: #dff3e5;
+    color: #176333;
+}
+
+.statut-a-venir {
+    background-color: #e6eaf5;
+    color: var(--secondary);
+}
+.appel-projet {
+    display: block;
+    margin-top: auto;
+    padding-top: 1.5rem;
+
+    color: var(--secondary);
+    font-weight: bold;
+
+    transition: color var(--transition);
+}
+
+.carte-projet:hover .appel-projet {
+    color: var(--accent);
+}
+.image-agrandie {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    background-color: rgba(0, 0, 0, 0.93);
+    padding: 3rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.image-agrandie:target {
+    display: flex;
+}
+
+.image-agrandie img {
+    display: block;
+
+    max-width: 95%;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.5);
+}
+.fermer-image {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+
+    text-decoration: none;
+    line-height: 1;
+}
+
+.fermer-image:hover {
+    color: crimson;
+}
+
+.fermer-image:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 5px;
+}
+.visualisation-pdf {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--white);
+
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.visualisation-pdf h3 {
+    color: var(--secondary);
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.visualisation-pdf p {
+    line-height: 1.7;
+}
+
+.visualisation-pdf iframe {
+    display: block;
+
+    width: 100%;
+    height: 600px;
+
+    border: 1px solid lightgray;
+    border-radius: 8px;
+
+    background-color: #f5f5f5;
+}
+.bouton-projet {
+    display: inline-block;
+    width: fit-content;
+
+    margin-top: 1rem;
+    padding: 0.7rem 1.2rem;
+
+    background-color: var(--secondary);
+    color: var(--white);
+
+    border-radius: var(--radius);
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: var(--transition);
+}
+
+.bouton-projet:hover {
+    background-color: var(--accent);
+    transform: translateY(-3px);
+}
+
+.bouton-projet:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+.informations-projets {
+    margin-block: 4rem;
+    padding: 2rem;
+
+    background-color: #e0eaf3;
+    border-left: 5px solid var(--primary);
+
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.informations-projets h2 {
+    color: var(--secondary);
+}
+
+.informations-projets p {
+    line-height: 1.8;
+}
+@media screen and (max-width: 900px) {
+
+    .grille-projets {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+@media screen and (max-width: 600px) {
+
+    .grille-projets {
+        grid-template-columns: 1fr;
+    }
+
+    .banniere-projets {
+        padding: 2rem 1rem;
+    }
+
+    .image-projet {
+        height: 190px;
+    }
+
+    .contenu-projet {
+        padding: 1.2rem;
+    }
+
+    .informations-projets {
+        padding: 1.2rem;
+    }
+
+    .image-agrandie {
+        padding: 1rem;
+    }
+
+    .image-agrandie img {
+        max-width: 100%;
+        max-height: 80vh;
+    }
+
+    .fermer-image {
+        top: 15px;
+        right: 20px;
+    }
+
+    .visualisation-pdf {
+        padding: 1rem;
+    }
+
+    .visualisation-pdf iframe {
+        height: 450px;
+    }
+
+}
+@media (prefers-reduced-motion: reduce) {
+
+    .carte-projet,
+    .image-projet img,
+    .appel-projet,
+    .bouton-projet {
+        transition: none;
+    }
+
+    .carte-projet:hover,
+    .bouton-projet:hover {
+        transform: none;
+    }
+
+}

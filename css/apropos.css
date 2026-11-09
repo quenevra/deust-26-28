@@ -1,0 +1,55 @@
+.page-apropos {
+    background-color: var(--background-color, aliceblue);
+}
+
+.page-apropos main {
+    width: min(100% - 2rem, 1000px);
+    margin-inline: auto;
+    padding-block: 3rem;
+}
+.presentation-apropos {
+    background-color: white;
+
+    padding: clamp(1.5rem, 4vw, 3rem);
+
+    border-radius: var(--radius, 10px);
+    border-left: 5px solid steelblue;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.presentation-apropos h2 {
+    color: navy;
+    font-size: var(--section-size, 2rem);
+
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.presentation-apropos p {
+    color: var(--text, #222);
+
+    font-size: var(--text-size, 1.1rem);
+
+    line-height: 1.9;
+    text-align: justify;
+
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+
+    .page-apropos main {
+        padding-block: 1.5rem;
+    }
+
+    .presentation-apropos {
+        padding: 1.3rem;
+    }
+
+    .presentation-apropos p {
+        text-align: left;
+        line-height: 1.7;
+    }
+}

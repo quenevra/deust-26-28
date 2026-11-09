@@ -1,8 +1,21 @@
 :root {
-  --main-color: lightgray;
-  --background-color: steelblue;
-  --title-color: white;
-  --header-color: black;
-  --primary-spacing: 15px;
-  --margin-top: 20px;
+    --primary: steelblue;
+    --secondary: navy;
+    --background-color: aliceblue;
+    --accent: crimson;
+    --text: #222222;
+    --white: #ffffff;
+    --light-gray: lightgray;
+    --primary-spacing: 15px;
+    --margin-top: 20px;
+    --spacing: clamp(0.75rem, 2vw, 2rem);
+    --radius: 10px;
+    --radius-small: 5px;
+    --title-size: clamp(1.5rem, 3vw, 2.5rem);
+    --section-size: clamp(1.3rem, 2.5vw, 2rem);
+    --text-size: clamp(0.9rem, 1.2vw, 1.1rem); 
+    --content-width: 1200px;
+    --contact-width: 300px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --transition: 0.3s ease;
 }
