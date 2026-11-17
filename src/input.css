@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import "tailwindcss";
+@theme {
+  --color-primary: steelblue;
+  --color-secondary: navy;
+  --color-background: aliceblue;
+  --font-titre: "Poppins", sans-serif;
+}
+@utility bouton {
+  box-shadow: 4px 4px 0px #000000; bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre; flex space-x-6 flex flex-wrap justify-center gap-3;
+}

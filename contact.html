@@ -1,263 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="Contactez-moi pour échanger sur mon parcours et mes projets numériques.">
+    <meta
+      name="description"
+      content="Contactez-moi pour échanger sur mon parcours et mes projets numériques."
+    />
 
     <title>Contact | Portfolio 2026</title>
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
 
-</head>
-
-
-<body class="page-contact">
+  <body class="page-contact">
     <header>
+      <div class="conteneur">
+        <h1>PORTFOLIO · 2026</h1>
 
-        <div class="conteneur">
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li>
+              <a href="index.html" class="btn"> Accueil </a>
+            </li>
 
-            <h1>PORTFOLIO · 2026</h1>
+            <li>
+              <a href="index tailwind.html" class="btn" aria-current="page">
+                Accueil tailwind
+              </a>
+            </li>
 
-            <nav aria-label="Navigation principale">
+            <li>
+              <a href="Projets.html" class="btn"> Projets </a>
+            </li>
 
-                <ul>
+            <li>
+              <a href="cv.html" class="btn"> CV </a>
+            </li>
 
-                    <li>
-                        <a href="index.html" class="btn">
-                            Accueil
-                        </a>
-                    </li>
+            <li>
+              <a href="contact.html" class="btn" aria-current="page">
+                Contact
+              </a>
+            </li>
 
-                    <li>
-                        <a href="Projets.html" class="btn">
-                            Projets
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="cv.html" class="btn">
-                            CV
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html" class="btn"
-                           aria-current="page">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="apropos.html" class="btn">
-                            À propos
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-        </div>
-
+            <li>
+              <a href="apropos.html" class="btn"> À propos </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-        <section class="banniere-contact">
+      <section class="banniere-contact">
+        <h2>Me contacter</h2>
 
-            <h2>Me contacter</h2>
+        <p>Voici les différents moyens de me contacter.</p>
+      </section>
+      <section class="grille-contact">
+        <article class="carte-contact">
+          <div class="icone-contact">@</div>
 
-            <p>
-                Voici les différents moyens de me contacter.
-            </p>
+          <h3>Mon adresse e-mail</h3>
 
-        </section>
-        <section class="grille-contact">
-            <article class="carte-contact">
+          <p>Vous pouvez me contacter directement par courrier électronique.</p>
 
-                <div class="icone-contact">
-                    @
-                </div>
+          <a href="mailto:Q.Evrard@etu.univ-littoral.fr" class="contact-link">
+            Q.Evrard@etu.univ-littoral.fr
+          </a>
 
-                <h3>Mon adresse e-mail</h3>
+          <br />
 
-                <p>
-                    Vous pouvez me contacter directement
-                    par courrier électronique.
-                </p>
+          <a href="mailto:Q.Evrard@etu.univ-littoral.fr" class="bouton-contact">
+            Envoyer un e-mail
+          </a>
+        </article>
+        <article class="carte-contact">
+          <div class="icone-contact">GH</div>
 
-                <a
-                    href="mailto:Q.Evrard@etu.univ-littoral.fr"
-                    class="contact-link"
-                >
-                    Q.Evrard@etu.univ-littoral.fr
-                </a>
+          <h3>Mon GitHub</h3>
 
-                <br>
+          <p>
+            Découvrez mes travaux, mes exercices et mes projets de développement
+            web.
+          </p>
 
-                <a
-                    href="mailto:Q.Evrard@etu.univ-littoral.fr"
-                    class="bouton-contact"
-                >
-                    Envoyer un e-mail
-                </a>
+          <a
+            href="https://github.com/quenevra"
+            class="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            github.com/quenevra
+          </a>
 
-            </article>
-            <article class="carte-contact">
+          <br />
 
-                <div class="icone-contact">
-                    GH
-                </div>
+          <a
+            href="https://github.com/quenevra"
+            class="bouton-contact"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visiter mon GitHub
+          </a>
+        </article>
+      </section>
+      <section class="section-formulaire">
+        <h2>Envoyez-moi un message</h2>
 
-                <h3>Mon GitHub</h3>
+        <form
+          class="formulaire-contact"
+          action="mailto:Q.Evrard@etu.univ-littoral.fr"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="champ-formulaire">
+            <label for="nom"> Votre nom </label>
 
-                <p>
-                    Découvrez mes travaux, mes exercices
-                    et mes projets de développement web.
-                </p>
+            <input
+              type="text"
+              id="nom"
+              name="nom"
+              placeholder="Votre nom"
+              autocomplete="name"
+              required
+            />
+          </div>
 
-                <a
-                    href="https://github.com/quenevra"
-                    class="contact-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    github.com/quenevra
-                </a>
+          <div class="champ-formulaire">
+            <label for="email"> Votre adresse e-mail </label>
 
-                <br>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="exemple@email.com"
+              autocomplete="email"
+              required
+            />
+          </div>
 
-                <a
-                    href="https://github.com/quenevra"
-                    class="bouton-contact"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Visiter mon GitHub
-                </a>
+          <div class="champ-formulaire">
+            <label for="sujet"> Sujet du message </label>
 
-            </article>
+            <input
+              type="text"
+              id="sujet"
+              name="sujet"
+              placeholder="Objet de votre message"
+              required
+            />
+          </div>
 
-        </section>
-        <section class="section-formulaire">
+          <div class="champ-formulaire">
+            <label for="message"> Votre message </label>
 
-            <h2>Envoyez-moi un message</h2>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Écrivez votre message ici..."
+              required
+            ></textarea>
+          </div>
 
-            <form
-                class="formulaire-contact"
-                action="mailto:Q.Evrard@etu.univ-littoral.fr"
-                method="post"
-                enctype="text/plain"
-            >
+          <button type="submit" class="bouton-envoi">
+            Préparer mon message
+          </button>
 
-                <div class="champ-formulaire">
-
-                    <label for="nom">
-                        Votre nom
-                    </label>
-
-                    <input
-                        type="text"
-                        id="nom"
-                        name="nom"
-                        placeholder="Votre nom"
-                        autocomplete="name"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="champ-formulaire">
-
-                    <label for="email">
-                        Votre adresse e-mail
-                    </label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="exemple@email.com"
-                        autocomplete="email"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="champ-formulaire">
-
-                    <label for="sujet">
-                        Sujet du message
-                    </label>
-
-                    <input
-                        type="text"
-                        id="sujet"
-                        name="sujet"
-                        placeholder="Objet de votre message"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="champ-formulaire">
-
-                    <label for="message">
-                        Votre message
-                    </label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        placeholder="Écrivez votre message ici..."
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit" class="bouton-envoi">
-                    Préparer mon message
-                </button>
-
-                <p>
-                    Ce formulaire utilise votre logiciel de
-                    messagerie. Son fonctionnement dépend
-                    de sa configuration sur votre appareil.
-                </p>
-
-            </form>
-
-        </section>
-        <section class="info-contact">
-
-            <p>
-                Merci de votre visite sur mon portfolio.
-            </p>
-
-        </section>
-
-
+          <p>
+            Ce formulaire utilise votre logiciel de messagerie. Son
+            fonctionnement dépend de sa configuration sur votre appareil.
+          </p>
+        </form>
+      </section>
+      <section class="info-contact">
+        <p>Merci de votre visite sur mon portfolio.</p>
+      </section>
     </main>
     <footer>
-
-        <div class="conteneur">
-
-            <p>
-                &copy; 2026 - Portfolio personnel
-            </p>
-
-        </div>
-
+      <div class="conteneur">
+        <p>&copy; 2026 - Portfolio personnel</p>
+      </div>
     </footer>
-
-
-</body>
+  </body>
 </html>
