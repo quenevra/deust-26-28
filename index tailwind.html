@@ -11,125 +11,84 @@
     />
 
     <title>Accueil | Portfolio 2026</title>
+
     <link rel="stylesheet" href="dist/output.css" />
   </head>
 
-  <body
-    class="min-h-screen bg-gradient-to-br from-gray-100 to-slate-200 text-slate-900 flex flex-col"
-  >
-    <header
-      class="bg-gradient-to-r from-sky-900 to-blue-700 text-white py-6 shadow-md"
-    >
-      <div class="conteneur mx-auto px-4 text-center">
-        <h1 class="text-2xl md:text-3xl font-bold tracking-widest mb-4">
-          PORTFOLIO <span>· 2026</span>
-        </h1>
-        <nav aria-label="Navigation principale">
-          <ul class="flex space-x-6 flex flex-wrap justify-center gap-3">
+  <body class="page-tailwind">
+    <header class="header-tailwind">
+      <div class="conteneur-header">
+        <h1 class="logo-tailwind">PORTFOLIO <span>· 2026</span></h1>
+
+        <nav class="navigation-tailwind" aria-label="Navigation principale">
+          <ul class="liste-navigation">
             <li>
-              <a
-                href="index.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre"
-              >
-                Accueil
-              </a>
+              <a href="index.html" class="lien-navigation"> Accueil </a>
             </li>
+
             <li>
               <a
                 href="indextailwind.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre"
+                class="lien-navigation"
+                aria-current="page"
               >
                 Accueil tailwind
               </a>
             </li>
 
             <li>
-              <a
-                href="Projets.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre"
-              >
-                Projets
-              </a>
+              <a href="Projets.html" class="lien-navigation"> Projets </a>
             </li>
 
             <li>
-              <a
-                href="cv.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre"
-              >
-                CV
-              </a>
+              <a href="cv.html" class="lien-navigation"> CV </a>
             </li>
 
             <li>
-              <a
-                href="contact.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors ombre"
-              >
-                Contact
-              </a>
+              <a href="contact.html" class="lien-navigation"> Contact </a>
             </li>
 
             <li>
-              <a
-                href="apropos.html"
-                class="bg-indigo-950 hoover:bg-indigo-800 px-4 py-2 rounded-lg text-sm transition hover:text-red-400 transition-colors shadow-2xl"
-              >
-                À propos
-              </a>
+              <a href="apropos.html" class="lien-navigation"> À propos </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-    <main>
-      <section id="bienvenue" class="hero">
-        <div class="conteneur">
-          <h2
-            class="text-3xl md:text-4xl font-bold text-indigo-950 mb-5 text-center"
-          >
-            Bienvenue ici, chez moi
-          </h2>
+    <main class="contenu-principal">
+      <section id="bienvenue" class="hero-tailwind">
+        <div class="conteneur-section">
+          <h2 class="titre-hero">Bienvenue ici, chez moi</h2>
 
-          <p class="text-sm text-gray-700 max-w-2xl mb-6 text-center">
+          <p class="texte-hero">
             Étudiant en DEUST Webmaster et Métiers de l’Internet, je construis
             un nouvel avenir dans le monde du numérique, à la croisée de la
             technique et de la créativité.
           </p>
 
-          <a
-            href="Projets.html"
-            class="bg-indigo-800 hoover:bg-indigo-950 text-white font-semibold text-sm px-6 py-3 rounded-lg ombre transition duration-300"
-          >
+          <a href="Projets.html" class="bouton-accueil">
             Découvrir mes projets
           </a>
         </div>
       </section>
-      <section id="parcours" class="section-parcours">
-        <div class="conteneur">
-          <h2 class="text-2xl font-bold text-indigo-950 md-5 text-center">
-            Un parcours, plusieurs voyages
-          </h2>
+      <section id="parcours" class="parcours-tailwind">
+        <div class="conteneur-section">
+          <h2 class="titre-parcours">Un parcours, plusieurs voyages</h2>
 
-          <p class="text-sm text-gray-700 max-w-2xl mb-6 text-center">
+          <p class="texte-parcours">
             De la cuisine à la musique, et maintenant au numérique : autant
             d’expériences qui nourrissent ma curiosité, ma créativité et ce
             nouveau projet professionnel.
           </p>
 
-          <a
-            href="apropos.html"
-            class="bg-red-600 hover:bg-red-700 text-white font-semibold text-sm px-6 py-3 rounded-lg ombre transition duration-300 shadow-2xl"
-          >
+          <a href="apropos.html" class="bouton-parcours">
             En savoir plus sur moi
           </a>
         </div>
       </section>
     </main>
-    <footer
-      class="bg-gradient-to-r from-sky-900 to-blue-700 text-white py-6 text-center"
-    >
-      <div class="conteneur">
+    <footer class="footer-tailwind">
+      <div class="conteneur-footer">
         <p>&copy; 2026 - Portfolio personnel</p>
       </div>
     </footer>
